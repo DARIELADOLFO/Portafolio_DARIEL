@@ -1,0 +1,1777 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/256/2758/2758702.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dariel Portafolio</title>
+
+    <script>
+        (function () {
+            var lang = localStorage.getItem('portfolio_lang') || 'es';
+            document.documentElement.classList.add(lang);
+        })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Nunito:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <button id="scrollTopBtn" title="Volver arriba" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#">ING. DARIEL PEÑA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">📄 <span class="lang-es">Sobre
+                                mí</span><span class="lang-en">About me</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Python">⚙️ Python</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">💼 Power BI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Excel">📊 Excel</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certificaciones">🎓 <span
+                                class="lang-es">Cursos</span><span class="lang-en">Courses</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#videos">🎥 Videos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">📧 <span
+                                class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
+
+                    <li class="nav-item">
+                        <button class="lang-toggle-btn" onclick="toggleLanguage()">
+                            <i class="fa-solid fa-language" style="font-size: 1.1rem;"></i>
+                            <span class="lang-es">English</span>
+                            <span class="lang-en">Español</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="video-background">
+        <video autoplay muted loop playsinline id="myVideo">
+            <source src="videofondo/video3.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <section id="sobre-mi" class="text-center">
+        <div class="container">
+
+            <span class="section-tag">Portfolio 2026</span> <br> <br>
+            <h1 class="section-heading"><span class="lang-es">Sobre mí</span><span class="lang-en">About me</span></h1>
+            <div class="section-separator">
+                <div class="section-dot"></div>
+            </div>
+
+            <div class="profile-image-container">
+                <img src="imagenes/DARIEL.jpeg" class="profile-image" alt="Dariel Peña">
+            </div>
+
+            <h2 class="profile-name">Ing. Dariel Peña</h2>
+            <p class="profile-role">
+                <span class="lang-es">💻 Ingeniero de Sistemas &nbsp;·&nbsp; 📊 Analista de Datos & Business
+                    Intelligence</span>
+                <span class="lang-en">💻 Systems Engineer &nbsp;·&nbsp; 📊 Data Analyst & Business Intelligence</span>
+            </p>
+
+            <div class="stats-row" id="stats-section">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="4">0</span>
+                    <span class="stat-label">
+                        <span class="lang-es">Años Experiencia</span><span class="lang-en">Years Experience</span>
+                    </span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="10">0</span>
+                    <span class="stat-label">
+                        <span class="lang-es">Proyectos BI</span><span class="lang-en">BI Projects</span>
+                    </span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="60">0</span>
+                    <span class="stat-label">
+                        <span class="lang-es">Optimización %</span><span class="lang-en">Optimization %</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-9">
+                    <p class="profile-desc">
+                        <span class="lang-es">Profesional enfocado en transformar datos en decisiones estratégicas y
+                            resultados medibles. Desarrollo soluciones analíticas orientadas a optimizar procesos,
+                            detectar oportunidades y anticipar riesgos operativos.</span>
+                        <span class="lang-en">Professional focused on transforming data into strategic decisions and
+                            measurable results. I develop analytical solutions aimed at optimizing processes, detecting
+                            opportunities, and anticipating operational risks.</span>
+                    </p>
+                    <p class="profile-desc mt-3">
+                        <span class="lang-es">Utilizo <strong>Power BI, Excel, Python y SQL</strong> para construir
+                            dashboards, automatizaciones y modelos de datos que convierten información compleja en
+                            ventajas competitivas para el negocio.</span>
+                        <span class="lang-en">I use <strong>Power BI, Excel, Python, and SQL</strong> to build
+                            dashboards, automations, and data models that turn complex information into competitive
+                            advantages for the business.</span>
+                    </p>
+                </div>
+            </div>
+
+            <br>
+
+            <p class="skills-section-label mt-4">
+                <span class="lang-es">Tecnologías & Herramientas</span>
+                <span class="lang-en">Technologies & Tools</span>
+            </p>
+
+            <div class="skills-slider-container">
+                <div class="skills-track">
+                    <div class="skill-icon-box"><i class="fa-solid fa-chart-bar"></i><span>Power BI</span></div>
+                    <div class="skill-icon-box"><i class="fa-solid fa-file-excel"></i><span>Excel</span></div>
+                    <div class="skill-icon-box"><i class="fa-brands fa-python"></i><span>Python</span></div>
+                    <div class="skill-icon-box"><i class="fa-solid fa-database"></i><span>SQL Server</span></div>
+                    <div class="skill-icon-box"><i class="fa-solid fa-table"></i><span>Pandas</span></div>
+                    <div class="skill-icon-box"><i class="fa-solid fa-brain"></i><span>Machine Learning</span></div>
+                    <div class="skill-icon-box"><i class="fa-solid fa-chart-line"></i><span>Looker Studio</span></div>
+                    <div class="skill-icon-box"><i class="fa-solid fa-code"></i><span>DAX</span></div>
+                    <div class="skill-icon-box"><i class="fa-solid fa-lightbulb"></i><span>BI Solutions</span></div>
+                    <div class="skill-icon-box"><i class="fa-solid fa-diagram-project"></i><span>Project Mgmt</span>
+                    </div>
+
+                    <div class="skill-icon-box"><i class="fa-solid fa-chart-bar"></i><span>Power BI</span></div>
+                    <div class="skill-icon-box"><i class="fa-solid fa-file-excel"></i><span>Excel</span></div>
+                    <div class="skill-icon-box"><i class="fa-brands fa-python"></i><span>Python</span></div>
+                    <div class="skill-icon-box"><i class="fa-solid fa-database"></i><span>SQL Server</span></div>
+                    <div class="skill-icon-box"><i class="fa-solid fa-table"></i><span>Pandas</span></div>
+                    <div class="skill-icon-box"><i class="fa-solid fa-brain"></i><span>Machine Learning</span></div>
+                    <div class="skill-icon-box"><i class="fa-solid fa-chart-line"></i><span>Looker Studio</span></div>
+                    <div class="skill-icon-box"><i class="fa-solid fa-code"></i><span>DAX</span></div>
+                    <div class="skill-icon-box"><i class="fa-solid fa-lightbulb"></i><span>BI Solutions</span></div>
+                    <div class="skill-icon-box"><i class="fa-solid fa-diagram-project"></i><span>Project Mgmt</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="streamlit">
+        <div class="container text-center fade-in-up">
+            <span class="section-tag">Python Apps</span> <br><br>
+            <h2 class="section-heading">
+                <span class="lang-es">Proyectos en Python</span>
+                <span class="lang-en">Python Projects </span>
+            </h2>
+            <div class="section-separator">
+                <div class="section-dot"></div>
+            </div>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/streamlit1.jpeg" class="card-img-top" alt="Dashboard 1">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Distribución edades / géneros</span>
+                                    <span class="lang-en">Age / Gender Distribution</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Aplicación web interactiva de análisis de datos desarrollada
+                                        con Python y Streamlit, diseñada para explorar el comportamiento del consumidor
+                                        y optimizar campañas de marketing. Permite segmentar clientes mediante filtros
+                                        interactivos (edad, género, estado civil) para recalcular KPIs en tiempo real y
+                                        descubrir patrones de consumo a través de visualizaciones avanzadas.</span>
+                                    <span class="lang-en">Interactive data analysis web application developed with
+                                        Python and Streamlit, designed to explore consumer behavior and optimize
+                                        marketing campaigns. It allows segmenting customers through interactive filters
+                                        (age, gender, marital status) to recalculate KPIs in real-time and discover
+                                        consumption patterns through advanced visualizations.</span>
+                                </p>
+                                <a href="https://dashboardciencia-de-datos-nwcvieglaekrvpyfngkjfj.streamlit.app/"
+                                    target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver Proyecto</span><span class="lang-en">View Project</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/ufc.jpeg" class="card-img-top" alt="UFC">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Modelo Predictivo UFC — Casa Blanca</span>
+                                    <span class="lang-en">Predictive Model UFC — Casa Blanca</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Análisis predictivo para UFC Freedom 250: Topuria vs. Gaethje.
+                                        Predicción con 66.2% de probabilidad basada en diferencial de striking, defensa
+                                        superior (64% striking / 94% derribos), menor daño absorbido y momentum
+                                        reciente. Enfoque matemático orientado a scouting y análisis deportivo.</span>
+                                    <span class="lang-en">Predictive analysis for UFC Freedom 250: Topuria vs. Gaethje.
+                                        Prediction with 66.2% probability based on striking differential, superior
+                                        defense (64% striking / 94% takedowns), less damage absorbed, and recent
+                                        momentum. Mathematical approach oriented towards scouting and sports
+                                        analysis.</span>
+                                </p>
+                                <a href="https://ufc-casa-blanca-prediccion-machine-learning.streamlit.app/"
+                                    target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver Proyecto</span><span class="lang-en">View Project</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/api4.png" class="card-img-top" alt="UFC">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Modelo Machine Learning -Clasificacion de sentimiento</span>
+                                    <span class="lang-en">Machine Learning Model - Sentiment Classification</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">- Un modelo que detecta el sentimiento en 5 niveles (de "Muy
+                                        malo" a "Excelente"). API con Flask: Servidor propio con seguridad JWT. Lo
+                                        Conecté a DB local para que el sistema sea eficiente: si una frase ya se
+                                        analizó, la trae de la base de datos; si es nueva, la IA la procesa y la guarda
+                                        de una vez.</span>
+                                    <span class="lang-en">A model that detects sentiment on 5 levels (from "Very Bad" to
+                                        "Excellent"). API with Flask: Dedicated server with JWT security. I connected it
+                                        to a local database for system efficiency: if a phrase has already been
+                                        analyzed, it retrieves it from the database; if it's new, the AI ​​processes and
+                                        saves it immediately.</span>
+                                </p>
+                                <a href="https://github.com/DARIELADOLFO/PROYECTO-FINAL_MODULO_APIS" target="_blank"
+                                    rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver Proyecto</span><span class="lang-en">View Project</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/streamlit2.jpeg" class="card-img-top" alt="Ventas">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Ventas Tecnologías</span>
+                                    <span class="lang-en">Tech Sales</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Aplicación interactiva para visualización de ventas simuladas
+                                        (2023–2026): ingresos totales $231.8 millones, 110.306 unidades vendidas.
+                                        Incluye filtros dinámicos por producto, región y rango de fechas, con KPIs
+                                        destacados y tendencias mensuales.</span>
+                                    <span class="lang-en">Interactive application for visualizing simulated sales
+                                        (2023–2026): total revenue $231.8 million, 110,306 units sold. Includes dynamic
+                                        filters by product, region, and date range, with highlighted KPIs and monthly
+                                        trends.</span>
+                                </p>
+                                <a href="https://ventasreporte.streamlit.app/" target="_blank" rel="noopener"
+                                    class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver Proyecto</span><span class="lang-en">View Project</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/streamlit3.jpeg" class="card-img-top" alt="Telecomunicaciones">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Telecomunicaciones</span>
+                                    <span class="lang-en">Telecommunications</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Distribución de averías, sectores, distritos municipales y
+                                        tendencias en el sector de telecomunicaciones. Dashboard interactivo con filtros
+                                        avanzados y mapas de calor.</span>
+                                    <span class="lang-en">Distribution of breakdowns, sectors, municipal districts, and
+                                        trends in the telecommunications sector. Interactive dashboard with advanced
+                                        filters and heat maps.</span>
+                                </p>
+                                <a href="https://dashboardaverias.streamlit.app/" target="_blank" rel="noopener"
+                                    class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver Proyecto</span><span class="lang-en">View Project</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <div class="container text-center fade-in-up">
+            <span class="section-tag">Business Intelligence</span> <br><br>
+            <h2 class="section-heading">
+                <span class="lang-es">Tableros en Power BI 📉</span>
+                <span class="lang-en">Power BI Dashboards 📉</span>
+            </h2>
+            <div class="section-separator">
+                <div class="section-dot"></div>
+            </div>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/NPS.jpeg" class="card-img-top" alt="NPS">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Análisis de NPS</span>
+                                    <span class="lang-en">NPS Analysis</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">KPIs clave: total de respuestas, promotores, neutros,
+                                        detractores, % de promotores y NPS global. Zona de clasificación del NPS para
+                                        ubicar rápidamente la salud del cliente. NPS por gerente con colores
+                                        identificativos. HTML embebido en DAX para visuales personalizados.</span>
+                                    <span class="lang-en">Key KPIs: total responses, promoters, passives, detractors, %
+                                        of promoters and global NPS. NPS classification zone to quickly locate customer
+                                        health. NPS by manager with identifying colors. Embedded HTML in DAX for custom
+                                        visuals.</span>
+                                </p>
+                                <a href="https://app.powerbi.com/view?r=eyJrIjoiMzBiMDZjOGItMzYyYS00NTU4LWEwZmEtNzdjYWE3ZWJkMTEyIiwidCI6IjMwOTE4NjllLTFiNWMtNDlhNy1iZWQwLTA1ODJiMjBlYzg0NSIsImMiOjJ9"
+                                    target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver más</span><span class="lang-en">View more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/dashboard_accidente.png" class="card-img-top" alt="UFC BI">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Analisis Accidentes de Transito</span>
+                                    <span class="lang-en">Traffic Accident Analysis</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Desarrollé un dashboard avanzado de accidentes de carreteras
+                                        usando DAX y SVG dinámico, apoyado por inteligencia artificial para automatizar
+                                        código, acelerar aprendizaje y mejorar productividad, creando visuales
+                                        personalizados, experiencias y análisis estratégicos con insights para la toma
+                                        de decisiones eficiente..</span>
+                                    <span class="lang-en">I developed an advanced road accident dashboard using DAX and
+                                        dynamic SVG, supported by artificial intelligence to automate code, accelerate
+                                        learning and improve productivity, creating custom visuals, experiences and
+                                        strategic analysis with insights for efficient decision making.</span>
+                                </p>
+                                <a href="https://github.com/DARIELADOLFO/DASHBOARD_PORWER_BI_ACCIDENTES_TRANSITO_BRAZIL"
+                                    target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver más</span><span class="lang-en">View more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/powerbi1.jpeg" class="card-img-top" alt="UFC BI">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Análisis de peleadores de UFC</span>
+                                    <span class="lang-en">UFC Fighters Analysis</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Visualización de eventos, ranking completo por divisiones con
+                                        victorias y % de efectividad, Top 5 peleadores por categoría de peso, campeones
+                                        actuales y panel visual optimizado con colores icónicos de la UFC.</span>
+                                    <span class="lang-en">Event visualization, complete ranking by divisions with wins
+                                        and % effectiveness, Top 5 fighters by weight class, current champions and
+                                        visual panel optimized with iconic UFC colors.</span>
+                                </p>
+                                <a href="https://app.powerbi.com/view?r=eyJrIjoiZmFjYmExNDctYWM1ZS00OTc2LTkyYTAtNjgxN2YzYWU4NzJlIiwidCI6IjMwOTE4NjllLTFiNWMtNDlhNy1iZWQwLTA1ODJiMjBlYzg0NSIsImMiOjJ9"
+                                    target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver más</span><span class="lang-en">View more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/PAG2.jpeg" class="card-img-top" alt="Distribuidora">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Distribuidora y Almacén</span>
+                                    <span class="lang-en">Distributor & Warehouse</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Análisis de ventas, rutas, gastos de mantenimiento y
+                                        combustible por camión. Logística empresarial con Power BI para toma de
+                                        decisiones. ETL con Power Query para limpieza y transformación de datos.</span>
+                                    <span class="lang-en">Sales, routes, maintenance and fuel expenses analysis per
+                                        truck. Business logistics with Power BI for decision making. ETL with Power
+                                        Query for data cleaning and transformation.</span>
+                                </p>
+                                <a href="https://app.powerbi.com/view?r=eyJrIjoiM2E0ODgwMzMtMDIyNy00NDE3LWIzMmEtZDQ2MGU5YzQ2ZGQ3IiwidCI6IjMwOTE4NjllLTFiNWMtNDlhNy1iZWQwLTA1ODJiMjBlYzg0NSIsImMiOjJ9"
+                                    target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver más</span><span class="lang-en">View more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/ferr.jpeg" class="card-img-top" alt="Ferretería">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Análisis de ventas de una Ferretería</span>
+                                    <span class="lang-en">Hardware Store Sales Analysis</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Análisis de ventas con Power BI, Excel y Power Query. ETL
+                                        completo para cargar, transformar y limpiar la información. Visualizaciones
+                                        interactivas para análisis de rentabilidad por producto y período.</span>
+                                    <span class="lang-en">Sales analysis with Power BI, Excel, and Power Query. Complete
+                                        ETL to load, transform, and clean information. Interactive visualizations for
+                                        profitability analysis by product and period.</span>
+                                </p>
+                                <a href="https://app.powerbi.com/view?r=eyJrIjoiMWRiMDYyMDgtODI1Ni00N2RlLWEwMDUtMmM4MzYyZTNiNGQxIiwidCI6IjMwOTE4NjllLTFiNWMtNDlhNy1iZWQwLTA1ODJiMjBlYzg0NSIsImMiOjJ9"
+                                    target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver más</span><span class="lang-en">View more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/ML.jpg" class="card-img-top" alt="ML">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Inteligencia de Texto (ML)</span>
+                                    <span class="lang-en">Text Intelligence (ML)</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Dashboard de Experiencia del Cliente (NPS) para sector
+                                        bancario. Integra métricas CSAT, AHT, variación mensual y modelo de Machine
+                                        Learning de clasificación de sentimientos: positivos, neutros y negativos,
+                                        categorizados en quejas, consultas o elogios.</span>
+                                    <span class="lang-en">Customer Experience (NPS) Dashboard for the banking sector.
+                                        Integrates CSAT, AHT metrics, monthly variation, and Machine Learning sentiment
+                                        classification model: positive, neutral, and negative, categorized into
+                                        complaints, queries, or compliments.</span>
+                                </p>
+                                <a href="https://app.powerbi.com/view?r=eyJrIjoiODkwMzk4M2QtNTI1ZC00ZDJhLWE2YjItYzBkODhjNDI4NmJlIiwidCI6IjMwOTE4NjllLTFiNWMtNDlhNy1iZWQwLTA1ODJiMjBlYzg0NSIsImMiOjJ9"
+                                    target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver más</span><span class="lang-en">View more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/nestle.jpg" class="card-img-top" alt="Nestle">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Tablero Comercial — Nestlé</span>
+                                    <span class="lang-en">Commercial Dashboard — Nestlé</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Dashboard comercial interactivo con KPIs de ventas totales,
+                                        costos, margen y margen porcentual. Visualizaciones por canal, categoría y
+                                        producto. Evalúa la relación entre ventas, costos y margen a lo largo del tiempo
+                                        para identificar tendencias.</span>
+                                    <span class="lang-en">Interactive commercial dashboard with KPIs for total sales,
+                                        costs, margin, and percentage margin. Visualizations by channel, category, and
+                                        product. Evaluates the relationship between sales, costs, and margin over time
+                                        to identify trends.</span>
+                                </p>
+                                <a href="https://app.powerbi.com/view?r=eyJrIjoiYzc3NDZjNTktNTJkMy00ZjFkLWI3ZTktM2M0OWY0NTYyMTc0IiwidCI6IjMwOTE4NjllLTFiNWMtNDlhNy1iZWQwLTA1ODJiMjBlYzg0NSIsImMiOjJ9"
+                                    target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver más</span><span class="lang-en">View more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/powerbi17.jpeg" class="card-img-top" alt="Restaurante">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Reporte Restaurante</span>
+                                    <span class="lang-en">Restaurant Report</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Análisis de ingresos, márgenes, gastos, turnos y meseros.
+                                        Permite tomar decisiones efectivas sobre rotación de turnos, horas de mayor
+                                        afluencia de clientes y platos más solicitados.</span>
+                                    <span class="lang-en">Analysis of income, margins, expenses, shifts, and waiters.
+                                        Allows making effective decisions about shift rotation, peak customer hours, and
+                                        most requested dishes.</span>
+                                </p>
+                                <a href="https://app.powerbi.com/view?r=eyJrIjoiZDY4ZjE0NTQtYWMxNy00OTUxLTg0NDctN2Y2MjFiNWVlODFlIiwidCI6IjMwOTE4NjllLTFiNWMtNDlhNy1iZWQwLTA1ODJiMjBlYzg0NSIsImMiOjJ9"
+                                    target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver más</span><span class="lang-en">View more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/You.jpeg" class="card-img-top" alt="DPV">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Análisis de Ventas DPV</span>
+                                    <span class="lang-en">DPV Sales Analysis</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Simulación de análisis para tienda de tecnología. Incluye
+                                        carga y limpieza con Power Query, visualizaciones interactivas, métricas clave
+                                        de rendimiento y diseño profesional orientado al análisis de datos real.</span>
+                                    <span class="lang-en">Analysis simulation for a technology store. Includes loading
+                                        and cleaning with Power Query, interactive visualizations, key performance
+                                        metrics, and a professional design oriented towards real data analysis.</span>
+                                </p>
+                                <a href="https://app.powerbi.com/view?r=eyJrIjoiOWI2MTk1MzgtZWNkYS00MWVjLThhMGQtNDBlNTUyMzNkNmU1IiwidCI6IjMwOTE4NjllLTFiNWMtNDlhNy1iZWQwLTA1ODJiMjBlYzg0NSIsImMiOjJ9"
+                                    target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver más</span><span class="lang-en">View more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/ede.jpg" class="card-img-top" alt="EdeSur">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Análisis de Averías Eléctricas (EdeSur)</span>
+                                    <span class="lang-en">Electrical Breakdowns Analysis (EdeSur)</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Panel interactivo para identificar zonas con mayor incidencia
+                                        de cortes, visualizar evolución por fecha, analizar por región y explorar mapa
+                                        interactivo con geolocalización precisa.</span>
+                                    <span class="lang-en">Interactive panel to identify areas with a higher incidence of
+                                        outages, visualize evolution by date, analyze by region, and explore an
+                                        interactive map with precise geolocation.</span>
+                                </p>
+                                <a href="https://portafolio-dariel-delta.vercel.app/" target="_blank" rel="noopener"
+                                    class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver más</span><span class="lang-en">View more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/covid.jpg" class="card-img-top" alt="COVID">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Propagación del COVID-19</span>
+                                    <span class="lang-en">Spread of COVID-19</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Dashboard interactivo en Power BI para analizar la propagación
+                                        del COVID-19 en Estados Unidos (ene–mar 2020). Comparación entre estados y
+                                        condados, tasas de letalidad por estado e identificación de zonas críticas con
+                                        más de 900K casos analizados.</span>
+                                    <span class="lang-en">Interactive dashboard in Power BI to analyze the spread of
+                                        COVID-19 in the United States (Jan–Mar 2020). Comparison between states and
+                                        counties, lethality rates by state, and identification of critical areas with
+                                        over 900K analyzed cases.</span>
+                                </p>
+                                <a href="#" target="_blank" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver más</span><span class="lang-en">View more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/powerbi13.png" class="card-img-top" alt="Utilidad Global">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Utilidad Global</span>
+                                    <span class="lang-en">Global Profit</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Dashboard de análisis de utilidad y márgenes a nivel global.
+                                        Indicadores clave de utilidad total y margen, visualizaciones por continente,
+                                        país, año y trimestre para identificar regiones con mayor rendimiento.</span>
+                                    <span class="lang-en">Dashboard for analyzing profit and margins globally. Key
+                                        indicators for total profit and margin, visualizations by continent, country,
+                                        year, and quarter to identify highest-performing regions.</span>
+                                </p>
+                                <a href="https://app.powerbi.com/view?r=eyJrIjoiNGJjNDIzYzUtZWVjNy00YTQzLTgxN2QtOTkwNGU2MTZkMzBlIiwidCI6IjMwOTE4NjllLTFiNWMtNDlhNy1iZWQwLTA1ODJiMjBlYzg0NSIsImMiOjJ9"
+                                    target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver más</span><span class="lang-en">View more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/powerbi14.png" class="card-img-top" alt="Toyota">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Ventas Toyota</span>
+                                    <span class="lang-en">Toyota Sales</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Análisis de ventas y rentabilidad por vendedor, cliente,
+                                        modelo y marca de vehículo. KPIs de ingresos, costos, margen y stock. Identifica
+                                        los vendedores con mejores resultados y los productos más rentables.</span>
+                                    <span class="lang-en">Sales and profitability analysis by seller, client, model, and
+                                        vehicle brand. KPIs for revenue, costs, margin, and stock. Identifies
+                                        top-performing sellers and the most profitable products.</span>
+                                </p>
+                                <a href="https://app.powerbi.com/view?r=eyJrIjoiNTBlNTg4NDctYmM4ZC00MjQwLTlhOWQtNjA3OGRjMWU2MzEwIiwidCI6IjMwOTE4NjllLTFiNWMtNDlhNy1iZWQwLTA1ODJiMjBlYzg0NSIsImMiOjJ9"
+                                    target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver más</span><span class="lang-en">View more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/powerbi10.png" class="card-img-top" alt="Call Center">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Call Center</h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Dashboard de servicio al cliente (marzo 2023): 1.009
+                                        asistencias, satisfacción promedio 3.40. 93.21% resueltas. Breakdown por área
+                                        (ventas, cancelaciones, reclamos) y monitoreo diario de llamadas para optimizar
+                                        eficiencia y tiempos de respuesta.</span>
+                                    <span class="lang-en">Customer service dashboard (March 2023): 1,009 assistances,
+                                        average satisfaction 3.40. 93.21% resolved. Breakdown by area (sales,
+                                        cancellations, claims) and daily call monitoring to optimize efficiency and
+                                        response times.</span>
+                                </p>
+                                <a href="https://app.powerbi.com/view?r=eyJrIjoiYTE1ZGU5NjYtNDM5Mi00ODMzLTlhMmItNTU1ZjdkYjNjZmY4IiwidCI6IjMwOTE4NjllLTFiNWMtNDlhNy1iZWQwLTA1ODJiMjBlYzg0NSIsImMiOjJ9"
+                                    target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver más</span><span class="lang-en">View more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/powerbi3.png" class="card-img-top" alt="Finanzas">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Finanzas</span>
+                                    <span class="lang-en">Finances</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Dashboard de ingresos $1.785.280: Chile lidera con 25.19%,
+                                        Canadá (22.92%) y Perú (19.33%). QUOKAR como producto más vendido, Jones & S.
+                                        como cliente top. Pie por región, barras por producto y Top 5 rankings con
+                                        filtros dinámicos.</span>
+                                    <span class="lang-en">Revenue dashboard $1,785,280: Chile leads with 25.19%, Canada
+                                        (22.92%), and Peru (19.33%). QUOKAR as top-selling product, Jones & S. as top
+                                        client. Pie by region, bars by product, and Top 5 rankings with dynamic
+                                        filters.</span>
+                                </p>
+                                <a href="https://app.powerbi.com/view?r=eyJrIjoiNWUwZWRiMTctZWFkMS00ZTVmLWExMTAtMTlhOGY0ZjMyNjY0IiwidCI6IjMwOTE4NjllLTFiNWMtNDlhNy1iZWQwLTA1ODJiMjBlYzg0NSIsImMiOjJ9"
+                                    target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver más</span><span class="lang-en">View more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/powerbi12.png" class="card-img-top" alt="RRHH">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">RRHH</span>
+                                    <span class="lang-en">HR</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Perfil demográfico y organizacional de empleados en
+                                        Latinoamérica: distribución por género (52.41% masculino), función (65.77%
+                                        administrativa), región (México lidera con 35.68%), nivel educativo y mapa
+                                        geográfico de presencia.</span>
+                                    <span class="lang-en">Demographic and organizational profile of employees in Latin
+                                        America: gender distribution (52.41% male), function (65.77% administrative),
+                                        region (Mexico leads with 35.68%), education level, and geographical presence
+                                        map.</span>
+                                </p>
+                                <a href="https://app.powerbi.com/view?r=eyJrIjoiMjI5NjIxYzctZWE2My00ODI1LTljNmUtYmMzYzkyMWNiOGE1IiwidCI6IjMwOTE4NjllLTFiNWMtNDlhNy1iZWQwLTA1ODJiMjBlYzg0NSIsImMiOjJ9"
+                                    target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver más</span><span class="lang-en">View more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/powerbi9.png" class="card-img-top" alt="Tecnologicas">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Ventas Tecnológicas</span>
+                                    <span class="lang-en">Tech Sales</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Rentabilidad en Latinoamérica: ingresos $158.079K, beneficios
+                                        netos $23.478K, margen 14.85%. México como país top ($5.203K, 15.60%), sector
+                                        público líder ($11.340K, 21.87%) y Cybernova como marca más rentable.</span>
+                                    <span class="lang-en">Profitability in Latin America: revenue $158,079K, net profit
+                                        $23,478K, margin 14.85%. Mexico as top country ($5,203K, 15.60%), public sector
+                                        leading ($11,340K, 21.87%), and Cybernova as the most profitable brand.</span>
+                                </p>
+                                <a href="https://app.powerbi.com/view?r=eyJrIjoiZTViMmY1ZjQtOGEyNS00NzJkLWFkN2UtMDczNGNkZmExOGUyIiwidCI6IjMwOTE4NjllLTFiNWMtNDlhNy1iZWQwLTA1ODJiMjBlYzg0NSIsImMiOjJ9"
+                                    target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver más</span><span class="lang-en">View more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/powerbi11.png" class="card-img-top" alt="Tiendas">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Financiero Tiendas</span>
+                                    <span class="lang-en">Store Financials</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Tiendas en Brasil: facturación $72.861K, 4.761 pedidos,
+                                        $3.643K en comisiones. Mapa geográfico, filtro por producto, evolución mensual
+                                        (pico en marzo $7.9K) y ranking de tiendas (Tienda 5 lidera con 21.95%).</span>
+                                    <span class="lang-en">Stores in Brazil: billing $72,861K, 4,761 orders, $3,643K in
+                                        commissions. Geographical map, product filter, monthly evolution (peak in March
+                                        $7.9K), and store ranking (Store 5 leads with 21.95%).</span>
+                                </p>
+                                <a href="https://app.powerbi.com/view?r=eyJrIjoiZDlmZmI2MzYtYWI0MS00OWJhLWIwZWEtZjIzMTkzYTM2NjBlIiwidCI6IjMwOTE4NjllLTFiNWMtNDlhNy1iZWQwLTA1ODJiMjBlYzg0NSIsImMiOjJ9"
+                                    target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver más</span><span class="lang-en">View more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/powerbi4.png" class="card-img-top" alt="Análisis Ventas">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Análisis de Ventas</span>
+                                    <span class="lang-en">Sales Analysis</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Ventas totales $559.533: región Oeste lidera con 43.91%
+                                        ($245.683), accesorios dominan con 54.04% ($302.372) y Lucas es el vendedor top
+                                        con $160.353. Pie charts, barras por vendedor y slicers para análisis
+                                        rápido.</span>
+                                    <span class="lang-en">Total sales $559,533: West region leads with 43.91%
+                                        ($245,683), accessories dominate with 54.04% ($302,372), and Lucas is the top
+                                        seller with $160,353. Pie charts, bars by seller, and slicers for quick
+                                        analysis.</span>
+                                </p>
+                                <a href="https://app.powerbi.com/view?r=eyJrIjoiYjg5NmFhYjYtYWYyYS00ZWM3LWJkMjgtZWUzZjQzYjQxZmVjIiwidCI6IjMwOTE4NjllLTFiNWMtNDlhNy1iZWQwLTA1ODJiMjBlYzg0NSIsImMiOjJ9"
+                                    target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver más</span><span class="lang-en">View more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/powerbi5.png" class="card-img-top" alt="Dashboard Ventas">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Dashboard Ventas</span>
+                                    <span class="lang-en">Sales Dashboard</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Ventas internacionales: 368 unidades por $643K. Barras por
+                                        país (Alemania, España y Rusia lideran con 36 unidades c/u), donut de vendedores
+                                        (Daniel ~28%), slicers por producto (Auriculares, Laptops, PCs).</span>
+                                    <span class="lang-en">International sales: 368 units for $643K. Bars by country
+                                        (Germany, Spain, and Russia lead with 36 units each), seller donut chart (Daniel
+                                        ~28%), slicers by product (Headphones, Laptops, PCs).</span>
+                                </p>
+                                <a href="https://app.powerbi.com/view?r=eyJrIjoiOTM5ZGU0MGItZTQwYy00OGI1LWE1MzQtOGMzNTI4Mzk0ZjQzIiwidCI6IjMwOTE4NjllLTFiNWMtNDlhNy1iZWQwLTA1ODJiMjBlYzg0NSIsImMiOjJ9"
+                                    target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver más</span><span class="lang-en">View more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/powerbi6.png" class="card-img-top" alt="Producción">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Producción</span>
+                                    <span class="lang-en">Production</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Histórico de órdenes (2016–2019): 55.723 unidades, 2.223
+                                        órdenes. Breakdown por mes, gerente, prioridad y razones de devolución. Línea
+                                        combinada de producción vs órdenes mensuales con slicers por estatus y
+                                        año.</span>
+                                    <span class="lang-en">Order history (2016–2019): 55,723 units, 2,223 orders.
+                                        Breakdown by month, manager, priority, and return reasons. Combined line of
+                                        production vs. monthly orders with slicers by status and year.</span>
+                                </p>
+                                <a href="https://app.powerbi.com/view?r=eyJrIjoiNjU5YjIzMmQtOTljZi00NTFmLTgwMjMtNmU1ZDNmNjQyNzZjIiwidCI6IjMwOTE4NjllLTFiNWMtNDlhNy1iZWQwLTA1ODJiMjBlYzg0NSIsImMiOjJ9"
+                                    target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver más</span><span class="lang-en">View more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/powerbi7.png" class="card-img-top" alt="Ventas Clientes">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Ventas Clientes</span>
+                                    <span class="lang-en">Client Sales</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Análisis de utilidad y márgenes para evaluar rentabilidad
+                                        global. Indicadores por continente, país, año y trimestre para identificar
+                                        regiones con mayor rendimiento y analizar la evolución de la
+                                        rentabilidad.</span>
+                                    <span class="lang-en">Profit and margin analysis to evaluate global profitability.
+                                        Indicators by continent, country, year, and quarter to identify
+                                        highest-performing regions and analyze profitability evolution.</span>
+                                </p>
+                                <a href="https://app.powerbi.com/view?r=eyJrIjoiNjk1ZjJjOGMtNGMzNS00NTg1LWJhMGQtOGM4ZjA5MjExMzk3IiwidCI6IjMwOTE4NjllLTFiNWMtNDlhNy1iZWQwLTA1ODJiMjBlYzg0NSIsImMiOjJ9"
+                                    target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver más</span><span class="lang-en">View more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/powerbi8.png" class="card-img-top" alt="Transporte">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Transporte</span>
+                                    <span class="lang-en">Transport</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Precios de transporte en México (2018): promedio global
+                                        $794.11. Tendencia mensual por categoría (autobús, metro, taxi, aéreo) y ranking
+                                        de ciudades (Chihuahua $2.285). DAX avanzado para rankings y promedios.</span>
+                                    <span class="lang-en">Transport prices in Mexico (2018): global average $794.11.
+                                        Monthly trend by category (bus, subway, taxi, air) and city ranking (Chihuahua
+                                        $2,285). Advanced DAX for rankings and averages.</span>
+                                </p>
+                                <a href="https://app.powerbi.com/view?r=eyJrIjoiZGUxYjdkMTItNDUwZS00NzE2LTgwMjAtNDVjNDllY2ZiZTJjIiwidCI6IjMwOTE4NjllLTFiNWMtNDlhNy1iZWQwLTA1ODJiMjBlYzg0NSIsImMiOjJ9"
+                                    target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver más</span><span class="lang-en">View more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/powerbi2.png" class="card-img-top" alt="Regiones">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Regiones</span>
+                                    <span class="lang-en">Regions</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Desempeño comercial con KPIs: ventas $240K, Sistemas lidera
+                                        con $133.6K, vendedor top Yefri A. Pérez $50.5K, región dominante Santo Domingo
+                                        $90.3K. Gráficos de barras, pie por región, treemap y jerarquía
+                                        interactiva.</span>
+                                    <span class="lang-en">Commercial performance with KPIs: sales $240K, Systems leads
+                                        with $133.6K, top seller Yefri A. Pérez $50.5K, dominant region Santo Domingo
+                                        $90.3K. Bar charts, pie by region, treemap, and interactive hierarchy.</span>
+                                </p>
+                                <a href="https://app.powerbi.com/view?r=eyJrIjoiZDU1ZTYxZTItZTQzMS00ZTNkLWIzOGUtOTU3ZGQzYjI3NzVjIiwidCI6IjMwOTE4NjllLTFiNWMtNDlhNy1iZWQwLTA1ODJiMjBlYzg0NSIsImMiOjJ9"
+                                    target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver más</span><span class="lang-en">View more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Excel">
+        <div class="container text-center fade-in-up">
+            <span class="section-tag">Spreadsheets</span> <br><br>
+            <h2 class="section-heading">
+                <span class="lang-es">Proyectos en Excel 💻📊</span>
+                <span class="lang-en">Excel Projects 💻📊</span>
+            </h2>
+            <div class="section-separator">
+                <div class="section-dot"></div>
+            </div>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/excel1.png" class="card-img-top" alt="Excel 1">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Ventas Adidas / Nike</span>
+                                    <span class="lang-en">Adidas / Nike Sales</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Análisis de ventas por mes, año, marcas y modelos. Dashboard
+                                        dinámico con tablas dinámicas y gráficos interactivos para comparación de
+                                        rendimiento entre marcas líderes.</span>
+                                    <span class="lang-en">Sales analysis by month, year, brands, and models. Dynamic
+                                        dashboard with pivot tables and interactive charts to compare performance
+                                        between leading brands.</span>
+                                </p>
+                                <a href="https://github.com/DARIELADOLFO/DASHBOARD_EXCEL" target="_blank" rel="noopener"
+                                    class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver más</span><span class="lang-en">View more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/excel2.png" class="card-img-top" alt="Excel 2">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Finanzas</span>
+                                    <span class="lang-en">Finances</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Ingresos por clientes, productos y períodos. Análisis de
+                                        margen y utilidad con visualizaciones dinámicas. Fórmulas avanzadas para
+                                        automatización del cálculo de rentabilidad.</span>
+                                    <span class="lang-en">Income by clients, products, and periods. Margin and profit
+                                        analysis with dynamic visualizations. Advanced formulas for automating
+                                        profitability calculations.</span>
+                                </p>
+                                <a href="https://github.com/DARIELADOLFO/DASHBOARD_EXCEL/tree/main/Dashboard%20de%20Finanzas%20y%20utilidad"
+                                    target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver más</span><span class="lang-en">View more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card h-100">
+                            <img src="imagenes/excel3.png" class="card-img-top" alt="Excel 3">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">Ventas General</span>
+                                    <span class="lang-en">General Sales</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Ventas por productos, región y vendedores. Dashboard completo
+                                        con segmentaciones interactivas, KPIs de rendimiento y análisis de tendencias
+                                        temporales.</span>
+                                    <span class="lang-en">Sales by products, region, and sellers. Complete dashboard
+                                        with interactive segmentations, performance KPIs, and temporal trends
+                                        analysis.</span>
+                                </p>
+                                <a href="https://github.com/DARIELADOLFO/DASHBOARD_EXCEL/tree/main/Dashboard%20de%20ventas"
+                                    target="_blank" rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver más</span><span class="lang-en">View more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificaciones">
+        <div class="container fade-in-up">
+            <div class="text-center mb-4">
+                <span class="section-tag"><br>
+                    <span class="lang-es">Educación continua</span> <br>
+                    <span class="lang-en">Continuous Education</span><br>
+                </span>
+                <h2 class="section-heading">
+                    <span class="lang-es">🎓 Cursos y Certificaciones</span>
+                    <span class="lang-en">🎓 Courses & Certifications</span>
+                </h2>
+                <div class="section-separator">
+                    <div class="section-dot"></div>
+                </div>
+                <p class="section-subtext">
+                    <span class="lang-es">Haz clic en las categorías y luego en la imagen para ver el
+                        certificado.</span>
+                    <span class="lang-en">Click on the categories and then on the image to view the certificate.</span>
+                </p>
+            </div>
+
+            <div class="accordion" id="accordionCertificaciones">
+
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left cert-category-btn" type="button"
+                                data-toggle="collapse" data-target="#collapseOne" aria-expanded="true">
+                                📊 Business Intelligence &amp; Data Analysis <span
+                                    style="color:var(--text-muted);font-weight:400;">(11)</span>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse show" data-parent="#accordionCertificaciones">
+                        <div class="card-body p-0">
+
+                            <div class="course-item">
+                                <span class="course-title" onclick="toggleDetails(this)">
+                                    <span class="lang-es">Diplomado en Business Intelligence with Power BI</span>
+                                    <span class="lang-en">Diploma in Business Intelligence with Power BI</span>
+                                </span>
+                                <div class="course-details">
+                                    <p><strong>Instituto Tecnológico de las Américas (ITLA) — Dic. 2024 | 40
+                                            horas</strong><br>
+                                        <span class="lang-es">ETL: Extract, Transform and Load desde diferentes fuentes.
+                                            Power Query para transformar y preparar datos de forma eficiente.</span>
+                                        <span class="lang-en">ETL: Extract, Transform and Load from different sources.
+                                            Power Query to transform and prepare data efficiently.</span>
+                                    </p>
+                                    <img src="imagenes/diplomadobusine.jpg" class="mini-cert-img"
+                                        onclick="openCertModal(this.src)" alt="Certificado">
+                                </div>
+                            </div>
+
+                            <div class="course-item">
+                                <span class="course-title" onclick="toggleDetails(this)">
+                                    <span class="lang-es">Diplomado Ciencia de Datos de Alta Gerencia</span>
+                                    <span class="lang-en">Diploma in Data Science for Senior Management</span>
+                                </span>
+                                <div class="course-details">
+                                    <p><strong>Instituto Tecnológico de las Américas (ITLA) — Ago. 2024 | 40
+                                            horas</strong><br>
+                                        <span class="lang-es">Manejo de datos con Python, Dataset, funciones básicas,
+                                            variables, bucles y lógica.</span>
+                                        <span class="lang-en">Data management with Python, Datasets, basic functions,
+                                            variables, loops, and logic.</span>
+                                    </p>
+                                    <img src="imagenes/cienciadedatos.jpg" class="mini-cert-img"
+                                        onclick="openCertModal(this.src)" alt="Certificado">
+                                </div>
+                            </div>
+
+                            <div class="course-item">
+                                <span class="course-title" onclick="toggleDetails(this)">
+                                    <span class="lang-es">Fundamentos de Programación con Python</span>
+                                    <span class="lang-en">Python Programming Fundamentals</span>
+                                </span>
+                                <div class="course-details">
+                                    <p><strong>Instituto Tecnológico de las Américas (ITLA) — Mar. 2025 | 40
+                                            horas</strong><br>
+                                        <span class="lang-es">Manejo de datos con Python, Dataset, funciones básicas,
+                                            variables, bucles y lógica.</span>
+                                        <span class="lang-en">Data management with Python, Datasets, basic functions,
+                                            variables, loops, and logic.</span>
+                                    </p>
+                                    <img src="imagenes/prog.python.jpg" class="mini-cert-img"
+                                        onclick="openCertModal(this.src)" alt="Certificado">
+                                </div>
+                            </div>
+
+                            <div class="course-item">
+                                <span class="course-title" onclick="toggleDetails(this)">
+                                    <span class="lang-es">Conviértete en Data Analyst</span>
+                                    <span class="lang-en">Become a Data Analyst</span>
+                                </span>
+                                <div class="course-details">
+                                    <p><strong>LinkedIn Learning — Ene. 2024 | 29 horas</strong><br>
+                                        <span class="lang-es">SQL, Visualización, inteligencia de negocio, Power BI,
+                                            Excel, funciones y DAX.</span>
+                                        <span class="lang-en">SQL, Visualization, Business Intelligence, Power BI,
+                                            Excel, functions, and DAX.</span>
+                                    </p>
+                                    <img src="imagenes/Conviertetedataanalyst.jpg" class="mini-cert-img"
+                                        onclick="openCertModal(this.src)" alt="Certificado">
+                                </div>
+                            </div>
+
+                            <div class="course-item">
+                                <span class="course-title" onclick="toggleDetails(this)">
+                                    <span class="lang-es">Python: Análisis Avanzado para Data Science</span>
+                                    <span class="lang-en">Python: Advanced Analysis for Data Science</span>
+                                </span>
+                                <div class="course-details">
+                                    <p><strong>Udemy — Dic. 2025 | 5 horas</strong><br>
+                                        <span class="lang-es">Python, dataset, pandas, numpy, modelos de predicción,
+                                            visualización y análisis.</span>
+                                        <span class="lang-en">Python, dataset, pandas, numpy, predictive models,
+                                            visualization, and analysis.</span>
+                                    </p>
+                                    <img src="imagenes/Python-Analisis Avanzado para Data Science.jpg"
+                                        class="mini-cert-img" onclick="openCertModal(this.src)" alt="Certificado">
+                                </div>
+                            </div>
+
+                            <div class="course-item">
+                                <span class="course-title" onclick="toggleDetails(this)">
+                                    <span class="lang-es">Curso Power BI: Funciones DAX + ChatGPT, Mapas y
+                                        Gráficos</span>
+                                    <span class="lang-en">Power BI Course: DAX Functions + ChatGPT, Maps, and
+                                        Charts</span>
+                                </span>
+                                <div class="course-details">
+                                    <p><strong>Udemy — May. 2025 | 11 horas</strong><br>
+                                        <span class="lang-es">Power BI, Excel, DAX, IA generativa, diseño visual,
+                                            ChatGPT, funciones y análisis.</span>
+                                        <span class="lang-en">Power BI, Excel, DAX, Generative AI, visual design,
+                                            ChatGPT, functions, and analysis.</span>
+                                    </p>
+                                    <img src="imagenes/Curso Power BI Funciones DAX + ChatGPT, mapas y gráficos.jpg"
+                                        class="mini-cert-img" onclick="openCertModal(this.src)" alt="Certificado">
+                                </div>
+                            </div>
+
+                            <div class="course-item">
+                                <span class="course-title" onclick="toggleDetails(this)">
+                                    <span class="lang-es">Estadística para Análisis de Datos</span>
+                                    <span class="lang-en">Statistics for Data Analysis</span>
+                                </span>
+                                <div class="course-details">
+                                    <p><strong>LinkedIn Learning — Dic. 2024 | 2 horas</strong><br>
+                                        <span class="lang-es">Estadísticas, algoritmos, funciones matemáticas, muestra,
+                                            media, probabilidad e inferencia estadística.</span>
+                                        <span class="lang-en">Statistics, algorithms, mathematical functions, sample,
+                                            mean, probability, and statistical inference.</span>
+                                    </p>
+                                    <img src="imagenes/Estadística para análisis de datos.jpg" class="mini-cert-img"
+                                        onclick="openCertModal(this.src)" alt="Certificado">
+                                </div>
+                            </div>
+
+                            <div class="course-item">
+                                <span class="course-title" onclick="toggleDetails(this)">
+                                    <span class="lang-es">Fundamentos de Ingeniería de Datos</span>
+                                    <span class="lang-en">Data Engineering Fundamentals</span>
+                                </span>
+                                <div class="course-details">
+                                    <p><strong>Platzi — Nov. 2024 | 2 horas</strong><br>
+                                        <span class="lang-es">Estadísticas, algoritmos, funciones matemáticas, muestra,
+                                            media, probabilidad e inferencia estadística.</span>
+                                        <span class="lang-en">Statistics, algorithms, mathematical functions, sample,
+                                            mean, probability, and statistical inference.</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="course-item">
+                                <span class="course-title" onclick="toggleDetails(this)">
+                                    <span class="lang-es">Curso de Análisis de Datos con Power BI</span>
+                                    <span class="lang-en">Data Analysis Course with Power BI</span>
+                                </span>
+                                <div class="course-details">
+                                    <p><strong>Platzi — Jun. 2024 | 20 horas</strong><br>
+                                        <span class="lang-es">Estadísticas, gráficos, medidas DAX, Power Query,
+                                            dashboard e inteligencia de negocio.</span>
+                                        <span class="lang-en">Statistics, charts, DAX measures, Power Query, dashboards,
+                                            and Business Intelligence.</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="course-item">
+                                <span class="course-title" onclick="toggleDetails(this)">
+                                    <span class="lang-es">Principios de Visualización de Datos para Business
+                                        Intelligence</span>
+                                    <span class="lang-en">Data Visualization Principles for Business Intelligence</span>
+                                </span>
+                                <div class="course-details">
+                                    <p><strong>Platzi — Jun. 2024 | 12 horas</strong><br>
+                                        <span class="lang-es">Gráficos, medidas DAX, Power Query, dashboard e
+                                            inteligencia de negocio.</span>
+                                        <span class="lang-en">Charts, DAX measures, Power Query, dashboards, and
+                                            Business Intelligence.</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="course-item">
+                                <span class="course-title" onclick="toggleDetails(this)">
+                                    <span class="lang-es">Power BI: 8 Proyectos para Volverte un Master</span>
+                                    <span class="lang-en">Power BI: 8 Projects to Become a Master</span>
+                                </span>
+                                <div class="course-details">
+                                    <p><strong>Udemy — Oct. 2023 | 4 horas</strong><br>
+                                        <span class="lang-es">Estadísticas, gráficos, medidas DAX, Power Query,
+                                            dashboard e inteligencia de negocio.</span>
+                                        <span class="lang-en">Statistics, charts, DAX measures, Power Query, dashboards,
+                                            and Business Intelligence.</span>
+                                    </p>
+                                    <img src="imagenes/8proyectospowerbi.jpg" class="mini-cert-img"
+                                        onclick="openCertModal(this.src)" alt="Certificado">
+                                </div>
+                            </div>
+
+                            <div class="course-item">
+                                <span class="course-title" onclick="toggleDetails(this)">
+                                    <span class="lang-es">Power BI: Empieza desde 0</span>
+                                    <span class="lang-en">Power BI: Start from 0</span>
+                                </span>
+                                <div class="course-details">
+                                    <p><strong>Udemy — Sep. 2023 | 6 horas</strong><br>
+                                        <span class="lang-es">Gráficos, interfaz, Power Query, conexiones, fuentes de
+                                            datos, dashboard e inteligencia de negocio.</span>
+                                        <span class="lang-en">Charts, interface, Power Query, connections, data sources,
+                                            dashboards, and Business Intelligence.</span>
+                                    </p>
+                                    <img src="imagenes/powetbidesde0.jpg" class="mini-cert-img"
+                                        onclick="openCertModal(this.src)" alt="Certificado">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingGestion">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left cert-category-btn collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseGestion">
+                                🏆 <span class="lang-es">Gestión de Proyectos y Liderazgo</span><span
+                                    class="lang-en">Project Management and Leadership</span> <span
+                                    style="color:var(--text-muted);font-weight:400;">(7)</span>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseGestion" class="collapse" data-parent="#accordionCertificaciones">
+                        <div class="card-body p-0">
+
+                            <div class="course-item">
+                                <span class="course-title" onclick="toggleDetails(this)">
+                                    <span class="lang-es">PMI — Project Management en Español · Gestión de Proyectos ·
+                                        35 hrs</span>
+                                    <span class="lang-en">PMI — Project Management in Spanish · Project Management · 35
+                                        hrs</span>
+                                </span>
+                                <div class="course-details">
+                                    <p><strong>Udemy — Ene. 2024 | 35 horas</strong><br>
+                                        <span class="lang-es">Mentalidad ágil, presentación al equipo, colaboración y
+                                            responsabilidades.</span>
+                                        <span class="lang-en">Agile mindset, team introduction, collaboration, and
+                                            responsibilities.</span>
+                                    </p>
+                                    <img src="imagenes/PMI.jpg" class="mini-cert-img" onclick="openCertModal(this.src)"
+                                        alt="Certificado">
+                                </div>
+                            </div>
+
+                            <div class="course-item">
+                                <span class="course-title" onclick="toggleDetails(this)">
+                                    <span class="lang-es">Agile en Acción: Construye tu Equipo Ágil</span>
+                                    <span class="lang-en">Agile in Action: Build Your Agile Team</span>
+                                </span>
+                                <div class="course-details">
+                                    <p><strong>LinkedIn Learning — Dic. 2023 | 2 horas</strong><br>
+                                        <span class="lang-es">Mentalidad ágil, presentación al equipo, colaboración y
+                                            responsabilidades.</span>
+                                        <span class="lang-en">Agile mindset, team introduction, collaboration, and
+                                            responsibilities.</span>
+                                    </p>
+                                    <img src="imagenes/equiipoagil.jpg" class="mini-cert-img"
+                                        onclick="openCertModal(this.src)" alt="Certificado">
+                                </div>
+                            </div>
+
+                            <div class="course-item">
+                                <span class="course-title" onclick="toggleDetails(this)">
+                                    <span class="lang-es">Agile en Acción: Impulsar Reuniones Ágiles y
+                                        Productivas</span>
+                                    <span class="lang-en">Agile in Action: Drive Agile and Productive Meetings</span>
+                                </span>
+                                <div class="course-details">
+                                    <p><strong>LinkedIn Learning — Dic. 2023 | 2 horas</strong><br>
+                                        <span class="lang-es">Mentalidad ágil, productividad del equipo, colaboración y
+                                            liderazgo.</span>
+                                        <span class="lang-en">Agile mindset, team productivity, collaboration, and
+                                            leadership.</span>
+                                    </p>
+                                    <img src="imagenes/agile2.jpg" class="mini-cert-img"
+                                        onclick="openCertModal(this.src)" alt="Certificado">
+                                </div>
+                            </div>
+
+                            <div class="course-item">
+                                <span class="course-title" onclick="toggleDetails(this)">
+                                    <span class="lang-es">Conviértete en Profesional en Gestión de Proyectos
+                                        Ágiles</span>
+                                    <span class="lang-en">Become a Professional in Agile Project Management</span>
+                                </span>
+                                <div class="course-details">
+                                    <p><strong>LinkedIn Learning — Dic. 2023 | 12 horas</strong><br>
+                                        <span class="lang-es">Gestionar un proyecto a través del ciclo de vida ágil.
+                                            Transición de gestión en cascada a gestión de proyectos ágil.</span>
+                                        <span class="lang-en">Manage a project through the agile lifecycle. Transition
+                                            from waterfall management to agile project management.</span>
+                                    </p>
+                                    <img src="imagenes/agileprofesioal.jpg" class="mini-cert-img"
+                                        onclick="openCertModal(this.src)" alt="Certificado">
+                                </div>
+                            </div>
+
+                            <div class="course-item">
+                                <span class="course-title" onclick="toggleDetails(this)">
+                                    <span class="lang-es">Gestión Ágil de Proyectos con Scrum: Curso AGILE</span>
+                                    <span class="lang-en">Agile Project Management with Scrum: AGILE Course</span>
+                                </span>
+                                <div class="course-details">
+                                    <p><strong>Udemy — Dic. 2023 | 2 horas</strong><br>
+                                        <span class="lang-es">Roles en Scrum, colaboración, gestión de proyectos e
+                                            implementaciones.</span>
+                                        <span class="lang-en">Roles in Scrum, collaboration, project management, and
+                                            implementations.</span>
+                                    </p>
+                                    <img src="imagenes/agileproyectoudemy.jpg" class="mini-cert-img"
+                                        onclick="openCertModal(this.src)" alt="Certificado">
+                                </div>
+                            </div>
+
+                            <div class="course-item">
+                                <span class="course-title" onclick="toggleDetails(this)">
+                                    <span class="lang-es">Project: Gestión de Proyectos Ágiles</span>
+                                    <span class="lang-en">Project: Agile Project Management</span>
+                                </span>
+                                <div class="course-details">
+                                    <p><strong>LinkedIn Learning — Dic. 2023 | 2 horas</strong><br>
+                                        <span class="lang-es">Planificación, transiciones, fundamentos de gestión ética,
+                                            ágil y de integración de proyectos.</span>
+                                        <span class="lang-en">Planning, transitions, fundamentals of ethical, agile
+                                            management, and project integration.</span>
+                                    </p>
+                                    <img src="imagenes/proyect.jpg" class="mini-cert-img"
+                                        onclick="openCertModal(this.src)" alt="Certificado">
+                                </div>
+                            </div>
+
+                            <div class="course-item">
+                                <span class="course-title" onclick="toggleDetails(this)">
+                                    <span class="lang-es">Liderazgo y Trabajo en Equipo</span>
+                                    <span class="lang-en">Leadership and Teamwork</span>
+                                </span>
+                                <div class="course-details">
+                                    <p><strong>LinkedIn Learning — Nov. 2023 | 2 horas</strong><br>
+                                        <span class="lang-es">Desarrollo individual, técnicas de trabajo en equipo,
+                                            avances constantes, ser una guía y ayuda para el equipo.</span>
+                                        <span class="lang-en">Individual development, teamwork techniques, constant
+                                            progress, being a guide and support for the team.</span>
+                                    </p>
+                                    <img src="imagenes/liderazgo.jpg" class="mini-cert-img"
+                                        onclick="openCertModal(this.src)" alt="Certificado">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingSQL">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left cert-category-btn collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseSQL">
+                                🗄️ <span class="lang-es">Base de Datos SQL</span><span class="lang-en">SQL
+                                    Database</span> <span style="color:var(--text-muted);font-weight:400;">(2)</span>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseSQL" class="collapse" data-parent="#accordionCertificaciones">
+                        <div class="card-body p-0">
+
+                            <div class="course-item">
+                                <span class="course-title" onclick="toggleDetails(this)">
+                                    <span class="lang-es">Curso SQL — Consultas en SQL para Principiantes +
+                                        ChatGPT</span>
+                                    <span class="lang-en">SQL Course — SQL Queries for Beginners + ChatGPT</span>
+                                </span>
+                                <div class="course-details">
+                                    <p><strong>Udemy — Dic. 2024 | 7.5 horas</strong><br>
+                                        <span class="lang-es">Consultas básicas, IA generativa para optimizar, gestión
+                                            de BDD, DML.</span>
+                                        <span class="lang-en">Basic queries, generative AI to optimize, DB management,
+                                            DML.</span>
+                                    </p>
+                                    <img src="imagenes/Curso SQL - Consultas en SQL para principiantes + ChatGPT.jpg"
+                                        class="mini-cert-img" onclick="openCertModal(this.src)" alt="Certificado">
+                                </div>
+                            </div>
+
+                            <div class="course-item">
+                                <span class="course-title" onclick="toggleDetails(this)">
+                                    <span class="lang-es">Curso de Bases de Datos con SQL</span>
+                                    <span class="lang-en">Database Course with SQL</span>
+                                </span>
+                                <div class="course-details">
+                                    <p><strong>Udemy — Jun. 2024 | 21 horas</strong><br>
+                                        <span class="lang-es">Consultas avanzadas, gestión de BDD, DDL, DML y
+                                            optimización de consultas.</span>
+                                        <span class="lang-en">Advanced queries, DB management, DDL, DML, and query
+                                            optimization.</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingExcel">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left cert-category-btn collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseExcel">
+                                📗 Excel &amp; Office Productivity <span
+                                    style="color:var(--text-muted);font-weight:400;">(1)</span>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseExcel" class="collapse" data-parent="#accordionCertificaciones">
+                        <div class="card-body p-0">
+
+                            <div class="course-item">
+                                <span class="course-title" onclick="toggleDetails(this)">
+                                    <span class="lang-es">Fórmulas, Gráficas, Tablas Dinámicas con Microsoft
+                                        Excel</span>
+                                    <span class="lang-en">Formulas, Charts, Pivot Tables with Microsoft Excel</span>
+                                </span>
+                                <div class="course-details">
+                                    <p>
+                                        <span class="lang-es">Tablas dinámicas, funciones, fórmulas básicas y avanzadas
+                                            para análisis de datos en Excel.</span>
+                                        <span class="lang-en">Pivot tables, functions, basic and advanced formulas for
+                                            data analysis in Excel.</span>
+                                    </p>
+                                    <img src="imagenes/Microsoft Excel.jpg" class="mini-cert-img"
+                                        onclick="openCertModal(this.src)" alt="Certificado">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="videos-youtube" style="padding: 80px 0;">
+        <div class="container text-center fade-in-up">
+            <span class="section-tag">Contenido Educativo</span> <br><br>
+            <h2 class="section-heading">
+                <span class="lang-es">Videos de YouTube 🎥</span>
+                <span class="lang-en">YouTube Videos 🎥</span>
+            </h2>
+            <div class="section-separator">
+                <div class="section-dot"></div>
+            </div>
+
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="card youtube-card h-100">
+                            <a href="https://www.youtube.com/watch?v=WWzl_XTblLk" target="_blank"
+                                rel="noopener noreferrer">
+                                <div class="thumb-wrapper">
+                                    <img src="https://img.youtube.com/vi/WWzl_XTblLk/0.jpg"
+                                        class="card-img-top youtube-thumbnail" alt="Python EDA">
+                                    <div class="play-overlay"><i class="fa-solid fa-circle-play"></i></div>
+                                </div>
+                            </a>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">PYTHON - COMO ANALIZAR TUS DATOS CON PYTHON? 🔥</span>
+                                    <span class="lang-en">PYTHON - HOW TO ANALYZE YOUR DATA WITH PYTHON? 🔥</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Mini EDA (Exploratory Data Analysis) usando Python y Pandas.
+                                        Aprenderás df.info(), describe(), detectar nulos, ver filas y columnas y
+                                        entender mejor tus datos.</span>
+                                    <span class="lang-en">Mini Exploratory Data Analysis (EDA) using Python and Pandas.
+                                        Learn df.info(), describe(), detect nulls, view rows and columns and better
+                                        understand your data.</span>
+                                </p>
+                                <a href="https://www.youtube.com/watch?v=WWzl_XTblLk" target="_blank" rel="noopener"
+                                    class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver Video</span><span class="lang-en">Watch Video</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card youtube-card h-100">
+                            <a href="https://www.youtube.com/watch?v=P5rlKb5V2N0&t=6s" target="_blank"
+                                rel="noopener noreferrer">
+                                <div class="thumb-wrapper">
+                                    <img class="card-img-top youtube-thumbnail"
+                                        src="https://img.youtube.com/vi/P5rlKb5V2N0/0.jpg"
+                                        alt="Power BI Organizar Medidas">
+                                    <div class="play-overlay"><i class="fa-solid fa-circle-play"></i></div>
+                                </div>
+                            </a>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">👉 POWER BI – COMO ORDENAR Y CREAR CARPETAS PARA TUS MEDIDAS
+                                        DAX</span>
+                                    <span class="lang-en">👉 POWER BI – HOW TO ORGANIZE AND CREATE FOLDERS FOR YOUR DAX
+                                        MEASURES</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Aprende a crear una tabla exclusiva para medidas y cómo
+                                        organizarlas usando carpetas y subcarpetas para que tu modelo se vea limpio y
+                                        profesional.</span>
+                                    <span class="lang-en">Learn how to create a dedicated table for measures and
+                                        organize them using folders and subfolders so your model looks clean and
+                                        professional.</span>
+                                </p>
+                                <a href="https://www.youtube.com/watch?v=P5rlKb5V2N0&t=6s" target="_blank"
+                                    rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver Video</span><span class="lang-en">Watch Video</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card youtube-card h-100">
+                            <a href="https://www.youtube.com/watch?v=5EEbK2QIn9M&t=1469s" target="_blank"
+                                rel="noopener noreferrer">
+                                <div class="thumb-wrapper">
+                                    <img class="card-img-top youtube-thumbnail"
+                                        src="https://img.youtube.com/vi/5EEbK2QIn9M/maxresdefault.jpg"
+                                        alt="Power BI Curso Completo">
+                                    <div class="play-overlay"><i class="fa-solid fa-circle-play"></i></div>
+                                </div>
+                            </a>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">POWER BI — Curso Completo desde 0</span>
+                                    <span class="lang-en">POWER BI — Complete Course from 0</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Dashboard de ventas para tienda de tecnología. Desde carga y
+                                        limpieza de datos hasta visualizaciones interactivas. Ideal para
+                                        principiantes.</span>
+                                    <span class="lang-en">Sales dashboard for a technology store. From data loading and
+                                        cleaning to interactive visualizations. Ideal for beginners.</span>
+                                </p>
+                                <a href="https://www.youtube.com/watch?v=5EEbK2QIn9M&t=1469s" target="_blank"
+                                    rel="noopener" class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver Video</span><span class="lang-en">Watch Video</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card youtube-card h-100">
+                            <a href="https://youtu.be/DsmfrHU2kt4" target="_blank" rel="noopener noreferrer">
+                                <div class="thumb-wrapper">
+                                    <img class="card-img-top youtube-thumbnail"
+                                        src="https://img.youtube.com/vi/DsmfrHU2kt4/maxresdefault.jpg"
+                                        alt="Visualizaciones Power BI">
+                                    <div class="play-overlay"><i class="fa-solid fa-circle-play"></i></div>
+                                </div>
+                            </a>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">POWER BI – Visuales y Gráficos que Hacen que los Datos
+                                        Hablen</span>
+                                    <span class="lang-en">POWER BI – Visuals and Charts that Make Data Speak</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Tipos de visualizaciones en Power BI: cuándo usar gráficos de
+                                        barras, líneas, tablas, KPIs y mapas según la pregunta de negocio.</span>
+                                    <span class="lang-en">Types of visualizations in Power BI: when to use bar charts,
+                                        line charts, tables, KPIs, and maps according to the business question.</span>
+                                </p>
+                                <a href="https://youtu.be/DsmfrHU2kt4" target="_blank" rel="noopener"
+                                    class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver Video</span><span class="lang-en">Watch Video</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card youtube-card h-100">
+                            <a href="https://www.youtube.com/watch?v=JD9bxHWM4oc" target="_blank"
+                                rel="noopener noreferrer">
+                                <div class="thumb-wrapper">
+                                    <img class="card-img-top youtube-thumbnail"
+                                        src="https://img.youtube.com/vi/JD9bxHWM4oc/maxresdefault.jpg"
+                                        alt="Formato Condicional en Power BI">
+                                    <div class="play-overlay"><i class="fa-solid fa-circle-play"></i></div>
+                                </div>
+                            </a>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">ASÍ HACEN LOS PRO EL FORMATO CONDICIONAL EN POWER BI-COLORES
+                                        DINÁMICOS CON DAX (IF)</span>
+                                    <span class="lang-en">THIS IS HOW THE PROS DO CONDITIONAL FORMATTING IN POWER BI:
+                                        DYNAMIC COLORS WITH DAX (IF)</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">Aplicar formato condicional usando DAX (IF), donde el color lo
+                                        decide la lógica del negocio; vas a crear medidas con IF y definir colores
+                                        usando logica tipo semáforo (verde, amarillo, rojo)</span>
+                                    <span class="lang-en">Apply conditional formatting using DAX (IF), where the color
+                                        is decided by business logic; you will create measures with IF and define colors
+                                        using traffic light logic (green, yellow, red).</span>
+                                </p>
+                                <a href="https://www.youtube.com/watch?v=JD9bxHWM4oc" target="_blank" rel="noopener"
+                                    class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver Video</span><span class="lang-en">Watch Video</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card youtube-card h-100">
+                            <a href="https://www.youtube.com/watch?v=GJ8eaU1hRLY" target="_blank"
+                                rel="noopener noreferrer">
+                                <div class="thumb-wrapper">
+                                    <img class="card-img-top youtube-thumbnail"
+                                        src="https://img.youtube.com/vi/GJ8eaU1hRLY/maxresdefault.jpg"
+                                        alt="Botones Interactivos en Power BI">
+                                    <div class="play-overlay"><i class="fa-solid fa-circle-play"></i></div>
+                                </div>
+                            </a>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">
+                                    <span class="lang-es">👉 POWER BI – CÓMO CREAR BOTONES INTERACTIVOS EN 3
+                                        MINUTOS</span>
+                                    <span class="lang-en">👉 POWER BI – HOW TO CREATE INTERACTIVE BUTTONS IN 3
+                                        MINUTES</span>
+                                </h5>
+                                <p class="card-text">
+                                    <span class="lang-es">En este video te muestro cómo crear botones interactivos en
+                                        Power BI de forma rápida y sencilla, para que tu dashboard se vea más
+                                        profesional. En menos de 3 minutos podrás navegar entre páginas.</span>
+                                    <span class="lang-en">In this video, I'll show you how to quickly and easily create
+                                        interactive buttons in Power BI, so your dashboard looks more professional. In
+                                        less than 3 minutes, you'll be able to navigate between pages.</span>
+                                </p>
+                                <a href="https://www.youtube.com/watch?v=GJ8eaU1hRLY" target="_blank" rel="noopener"
+                                    class="btn btn-primary mt-auto">
+                                    <span class="lang-es">Ver Video</span><span class="lang-en">Watch Video</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contacto">
+        <div class="container">
+            <p class="footer-name">ING. DARIEL PEÑA</p>
+            <p class="footer-role">
+                <span class="lang-es">Ingeniero de Sistemas · Analista de Datos &amp; BI</span>
+                <span class="lang-en">Systems Engineer · Data Analyst &amp; BI</span>
+            </p>
+            <ul class="social-icons">
+                <li><a href="https://www.linkedin.com/in/darielpe%C3%B1av%C3%A1squez/" target="_blank" rel="noopener"
+                        title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://github.com/DARIELADOLFO" target="_blank" rel="noopener" title="GitHub"><i
+                            class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.youtube.com/@VisionMetricsDPV" target="_blank" rel="noopener"
+                        title="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://www.instagram.com/vision_metrics?igsh=Z2w0MXg1N2VnNm5w" target="_blank"
+                        rel="noopener" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+            <p class="footer-copy">
+                <span class="lang-es">Todos los derechos reservados</span><span class="lang-en">All rights
+                    reserved</span> &copy; 2026 &nbsp;·&nbsp; Ing. Dariel Peña
+            </p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="certModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body text-center position-relative p-0">
+                    <button type="button" class="close text-white position-absolute"
+                        style="right:-15px;top:-28px;font-size:2rem;opacity:1;z-index:10;" data-dismiss="modal"
+                        aria-label="Cerrar">&times;</button>
+                    <img id="certImageFull" src="" class="img-fluid rounded shadow-lg" alt="Certificado">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
